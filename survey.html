@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outside">
+        <form id="survey-form" method="post">
+          <h1 class="surveytitle" id="title" ><a href="index.html" style="text-decoration:none;"><b>Survey</b></a></h1>
+          <h1 class="surveytitle" id="title" ><a href="indexest.html" style="text-decoration:none;"><b>Küsitlus</b></a></h1>
+          <p>> Vajutades "Küsitlus", viib sind tagasi eesti keelsele avalehele</p>
+          <p>> Clicking "Survey" will take you back to the main page</p>
+          <p>> Saada Tagasiside nupp ei tee midagi</p>
+          <fieldset>
+            <legend>Detailid</legend>
+            <div>
+              <label id="name-label" for="name">Nimi:</label>
+              <input type="text"  id="name" name="user_name">   </div>
+            <div>
+              <label for="address-label">Address:</label>
+              <input type="Address" id="address" name="Address">   </div>
+            <div>
+              <label id="email-label" for="Email">Email:</label>
+              <input type="email"  id="email" name="user_email">   </div>
+            <div>
+              <label id="iq-label" for="iq">Tilli Suurus(cm):</label>
+              <input type="number" id="iq" name="iq">   </div>
+            <div>
+              <label for="Gender">Kas teile meeldis meie leht?</label>
+              <p>
+                <input type="radio" name="gender" value="male" checked>Ei<br>
+                <input type="radio" name="gender" value="female">Jah<br>
+                <input type="radio" name="gender" value="other">Peldik
+              </p>
+            </div>
+          
+          </fieldset>
+          <fieldset>
+            <label for="Gender">Vali kõik mis on tõesed</label>
+            <p>
+              <input type="checkbox" name="tattoo" value="tattoo">Mul on soov surra<br>
+              <input type="checkbox" name="age" value="Car">Mulle meeldib koodida<br>
+              <input type="checkbox" name="car" value="car">Mul on juhiload<br>
+              <input type="checkbox" name="work" value="work" checked>Elan omaette<br>
+              <input type="checkbox" name="rich" value="rich" checked>Mu vanemad on rikkad<br>
+            </p>
+            <div>
+          </fieldset>
+          <button type="submit" id="submit">Saada Tagasiside</button> 
+</body>
+</html>

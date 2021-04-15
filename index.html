@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>tiitel</title>
+</head>
+<body class="bodyeng">
+    <ul>
+        <li><a href="survey.html">Survey</a></li>
+        <li><a href="indexest.html">Eesti</a></li>
+    </ul>
+    <h1 class="title">Button Clicker Game</h1>
+    <button class="nupp" onclick='document.getElementById("cocks").innerHTML = "1"'><b>one</b></button>
+    <button class="nupp" onclick='document.getElementById("cocks").innerHTML = "2"'><b>two</b></button>
+    <h1 id="cocks" class="yep">‎‎ </h1>
+    <button class="colorLight" onclick="document.body.style.backgroundColor = '#ffffff';"><b>Light☀️</b></button>
+    <button class="colorDark" onclick="document.body.style.backgroundColor = '#202020';"><b>Dark🌙</b></button>
+    <br></br>
+    <button type="button" class="randombutton" onclick="document.getElementById('hello').innerHTML = myFunction(0,10)"><b>Random Number</b></button>
+    <h1 id="hello" class="yep">‎‎ </h1>
+
+    <script>
+    function myFunction(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    }
+    </script>
+    <a style="text-decoration:none;" href="https://www.github.com/erikparisva"><p class="copyright">© Erik Parisvä - 2021</p></a>
+</body>
+</html>
